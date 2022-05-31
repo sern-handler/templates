@@ -12,7 +12,7 @@ const client = new Client({
 Sern.init({
 	client,
 	defaultPrefix : '!', // removing defaultPrefix will shut down text commands
-	commands: 'dist/commands',
+	commands: 'commands',
 });
 
 client.login();
