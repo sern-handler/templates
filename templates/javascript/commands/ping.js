@@ -6,5 +6,5 @@ exports.default = sernModule([], {
 	//alias : [],
 	execute: (ctx, args) => {
 		ctx.reply({ content: 'Pong 🏓' });
-	}
+	},
 });

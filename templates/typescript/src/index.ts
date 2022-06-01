@@ -5,14 +5,14 @@ const client = new Client({
 	intents: [
 		GatewayIntentBits.Guilds,
 		GatewayIntentBits.GuildMembers,
-		GatewayIntentBits.GuildMessages
-	]
+		GatewayIntentBits.GuildMessages,
+	],
 });
 
 Sern.init({
 	client,
 	defaultPrefix: '!', // removing defaultPrefix will shut down text commands
-	commands: 'dist/commands'
+	commands: 'dist/commands',
 });
 
 client.login();

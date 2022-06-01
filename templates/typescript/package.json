@@ -1,25 +1,25 @@
 {
-  "name": "ts-example",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "typescript",
-    "sern",
-    "discord.js",
-    "cli"
-  ],
-  "author": "EvolutionX",
-  "license": "UNLICENSED",
-  "dependencies": {
-    "@sern/handler": "^1.0.0-beta",
-    "discord.js": "^14.0.0-dev.1650672498-3617093"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.25",
-    "typescript": "^4.6.3"
-  }
+	"name": "ts-example",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"typescript",
+		"sern",
+		"discord.js",
+		"cli"
+	],
+	"author": "EvolutionX",
+	"license": "UNLICENSED",
+	"dependencies": {
+		"@sern/handler": "^1.0.0-beta",
+		"discord.js": "^14.0.0-dev.1650672498-3617093"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.25",
+		"typescript": "^4.6.3"
+	}
 }
