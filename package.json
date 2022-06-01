@@ -1,30 +1,30 @@
 {
-  "name": "templates",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Project templates for sern",
-  "workspaces": [
-    "templates/*"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sern-handler/templates.git"
-  },
-  "keywords": [
-    "sern",
-    "cli",
-    "discord.js"
-  ],
-  "author": "EvolutionX",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sern-handler/templates/issues"
-  },
-  "homepage": "https://github.com/sern-handler/templates#readme",
-  "devDependencies": {
-    "prettier": "^2.6.2"
-  }
+	"name": "templates",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Project templates for sern",
+	"workspaces": [
+		"templates/*"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sern-handler/templates.git"
+	},
+	"keywords": [
+		"sern",
+		"cli",
+		"discord.js"
+	],
+	"author": "EvolutionX",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/sern-handler/templates/issues"
+	},
+	"homepage": "https://github.com/sern-handler/templates#readme",
+	"devDependencies": {
+		"prettier": "^2.6.2"
+	}
 }
