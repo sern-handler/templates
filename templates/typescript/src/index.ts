@@ -1,18 +1,18 @@
-import { Client, GatewayIntentBits } from 'discord.js';
-import { Sern } from '@sern/handler';
+import {Client, GatewayIntentBits} from 'discord.js';
+import {Sern} from '@sern/handler';
 
 const client = new Client({
-	intents: [
-		GatewayIntentBits.Guilds,
-		GatewayIntentBits.GuildMembers,
-		GatewayIntentBits.GuildMessages,
-	],
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildMessages,
+    ],
 });
 
 Sern.init({
-	client,
-	defaultPrefix : '!', // removing defaultPrefix will shut down text commands
-	commands: 'dist/commands',
+    client,
+    defaultPrefix: '!', // removing defaultPrefix will shut down text commands
+    commands: 'dist/commands',
 });
 
 client.login();
