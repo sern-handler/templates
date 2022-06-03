@@ -6,6 +6,7 @@ const client = new Client({
 		GatewayIntentBits.Guilds,
 		GatewayIntentBits.GuildMembers,
 		GatewayIntentBits.GuildMessages,
+		GatewayIntentBits.MessageContent, // Make sure this is enabled for text commands!
 	],
 });
 
