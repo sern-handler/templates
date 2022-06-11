@@ -2,7 +2,7 @@
 	"name": "js-example",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "src/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -16,11 +16,9 @@
 	"license": "UNLICENSED",
 	"dependencies": {
 		"@sern/handler": "^1.0.0-beta",
-		"discord.js": "^14.0.0-dev.1650672498-3617093",
-		"package.json": "^2.0.1"
+		"discord.js": "^14.0.0-dev.1650672498-3617093"
 	},
 	"devDependencies": {
-		"@types/node": "^17.0.25",
-		"prettier": "^2.6.2"
+		"@types/node": "^17.0.25"
 	}
 }
