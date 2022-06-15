@@ -24,15 +24,9 @@ jobs:
         with:
           node-version: 17
 
-      # ESLint and Prettier must be in `package.json`
+      # Prettier must be in `package.json`
       - name: Install Node.js dependencies
         run: npm i
 
       - name: Run linters
-        uses: wearerequired/lint-action@42567b31ed576cdd5a431d77ca5bc8822430d1d0 # tag=v1
-        with:
-          eslint: false
-          prettier: true
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          auto_fix: false
-          commit_message: "style(auto): fix code style issues with ${linter}"
+        run: npm run format
