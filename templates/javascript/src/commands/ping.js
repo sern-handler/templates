@@ -1,6 +1,6 @@
 const { CommandType, sernModule } = require('@sern/handler');
 
-module.exports = sernModule([], {
+exports.default = sernModule([], {
 	type: CommandType.Both,
 	description: 'A ping command',
 	//alias : [],
