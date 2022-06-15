@@ -1,5 +1,5 @@
-import { Client, GatewayIntentBits } from 'discord.js';
-import { Sern } from '@sern/handler';
+const { Client, GatewayIntentBits } = require('discord.js');
+const { Sern } = require('@sern/handler');
 
 const client = new Client({
 	intents: [
