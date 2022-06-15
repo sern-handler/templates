@@ -1,18 +1,44 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base", "group:allNonMajor"],
+	"extends": ["config:base", "helpers:pinGitHubActionDigests"],
+	"automerge": true,
+	"automergeStrategy": "squash",
+	"automergeComment": "Renovate: Auto Merged dependencies",
 	"major": {
-		"dependencyDashboardApproval": true
+		"dependencyDashboardApproval": true,
+		"reviewers": ["EvolutionX-10"]
 	},
-	"schedule": ["every weekend"],
+	"minor": {
+		"automerge": true,
+		"automergeStrategy": "squash",
+		"automergeComment": "Automerging PR for minor dependencies"
+	},
+	"patch": {
+		"automerge": true,
+		"automergeStrategy": "squash",
+		"automergeComment": "Automerging PR for patch dependencies"
+	},
+	"schedule": ["before 6pm every weekday"],
 	"lockFileMaintenance": {
 		"enabled": true,
-		"automerge": true
+		"automerge": true,
+		"automergeStrategy": "squash",
+		"automergeComment": "Automerging PR for lock file maintenance"
 	},
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["minor", "patch"],
-			"matchCurrentVersion": "!/^0/"
+			"matchCurrentVersion": "!/^0/",
+			"automerge": true,
+			"automergeStrategy": "squash"
+		},
+		{
+			"matchPackagePatterns": ["discord-api-types"],
+			"enabled": false
+		},
+		{
+			"matchPackagePatterns": ["discord.js"],
+			"dependencyDashboardApproval": true
 		}
 	]
 }
