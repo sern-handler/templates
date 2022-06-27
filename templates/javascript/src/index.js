@@ -9,11 +9,11 @@ const client = new Client({
 		GatewayIntentBits.MessageContent, // Make sure this is enabled for text commands!
 	],
 });
-
+//View docs for all options
 Sern.init({
 	client,
 	defaultPrefix: '!', // removing defaultPrefix will shut down text commands
-	commands: 'src/commands',
+	commands: 'src/commands'
 });
 
 client.login();
