@@ -7,5 +7,5 @@ exports.default = commandModule({
 	//alias : [],
 	execute: async (ctx, args) => {
 		await ctx.reply('Pong 🏓');
-	}
+	},
 });
