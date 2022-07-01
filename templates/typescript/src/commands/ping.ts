@@ -1,10 +1,11 @@
-import { Args, CommandType, Context, sernModule } from '@sern/handler';
+import { commandModule, CommandType } from '@sern/handler';
 
-export default sernModule([], {
+export default commandModule({
 	type: CommandType.Both,
+	plugins: [],
 	description: 'A ping command',
 	//alias : [],
-	execute: (ctx: Context, args: Args) => {
-		ctx.reply({ content: 'Pong 🏓' });
+	execute: async (ctx, args) => {
+		await ctx.reply({ content: 'Pong 🏓' });
 	},
 });

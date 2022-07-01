@@ -9,14 +9,12 @@
 	"keywords": [
 		"typescript",
 		"sern",
-		"discord.js",
-		"cli"
+		"discord.js"
 	],
-	"author": "EvolutionX",
 	"license": "UNLICENSED",
 	"dependencies": {
-		"@sern/handler": "^1.0.1-beta",
-		"discord.js": "^14.0.0-dev.1650672498-3617093"
+		"@sern/handler": "^1.1.0-beta",
+		"discord.js": "^14.0.0-dev.1654776344-94bdcac"
 	},
 	"devDependencies": {
 		"@types/node": "^17.0.25",
