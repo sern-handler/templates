@@ -13,7 +13,7 @@ const client = new Client({
 Sern.init({
 	client,
 	defaultPrefix: '!', // removing defaultPrefix will shut down text commands
-	commands: 'dist/commands',
+	commands: 'dist/commands', // join discord server to learn how to load events!
 });
 
 client.login();

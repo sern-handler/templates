@@ -5,7 +5,7 @@ export default commandModule({
 	plugins : [],
 	description: 'A ping command',
 	//alias : [],
-	execute: (ctx, args) => {
-		ctx.reply({ content: 'Pong 🏓' });
+	execute: async (ctx, args) => {
+		await ctx.reply({ content: 'Pong 🏓' });
 	},
 });
