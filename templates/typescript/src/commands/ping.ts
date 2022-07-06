@@ -6,6 +6,6 @@ export default commandModule({
 	description: 'A ping command',
 	//alias : [],
 	execute: async (ctx, args) => {
-		await ctx.reply({ content: 'Pong 🏓' });
+		await ctx.reply('Pong 🏓');
 	},
 });
