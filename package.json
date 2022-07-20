@@ -27,6 +27,6 @@
 	},
 	"homepage": "https://github.com/sern-handler/templates#readme",
 	"devDependencies": {
-		"prettier": "^2.6.2"
+		"prettier": "2.7.1"
 	}
 }
