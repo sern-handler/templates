@@ -14,7 +14,7 @@ Sern.init({
 	client,
 	defaultPrefix: '!', // removing defaultPrefix will shut down text commands
 	commands: 'dist/commands',
-	// events: 'dist/events' (optional), 
+	// events: 'dist/events' (optional),
 });
 
 client.login();
