@@ -13,7 +13,7 @@
 	],
 	"license": "UNLICENSED",
 	"dependencies": {
-		"@sern/handler": "^1.1.9-beta",
+		"@sern/handler": "^1.0.0",
 		"discord.js": "^14.2.0"
 	},
 	"devDependencies": {
