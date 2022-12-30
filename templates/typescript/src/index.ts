@@ -40,8 +40,8 @@ export const useContainer = Sern.makeDependencies<MyDependencies>({
 //View docs for all options
 Sern.init({
 	defaultPrefix: '!', // removing defaultPrefix will shut down text commands
-	commands: 'src/commands',
-	// events: 'src/events' (optional),
+	commands: 'dist/commands',
+	// events: 'dist/events' (optional),
 	containerConfig: {
 		get: useContainer,
 	},
