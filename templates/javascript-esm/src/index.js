@@ -22,8 +22,8 @@ const client = new Client({
 export const useContainer = Sern.makeDependencies({
 	build: (root) =>
 		root
-			.add({ '@sern/client': single(client) })
-			.add({ '@sern/logger': single(new DefaultLogging()) }),
+			.add({ '@sern/client': single(() => client) })
+			.upsert({ '@sern/logger': single(() => new DefaultLogging()) }), //using upsert because it replaces the default provided
 });
 
 //View docs for all options
