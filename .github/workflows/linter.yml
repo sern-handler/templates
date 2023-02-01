@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748 # tag=v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854 # tag=v3
+        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3
         with:
           node-version: 17
 
