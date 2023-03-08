@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"target": "ESNext",
+		"module": "ESNext",
+		"outDir": "dist",
+		"rootDir": "src",
+		"strict": true,
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"importsNotUsedAsValues": "error",
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowJs": true,
+		"allowUnreachableCode": true,
+		"allowUnusedLabels": true,
+		"alwaysStrict": true,
+		"exactOptionalPropertyTypes": true,
+		"paths": {
+			"#client": ["src/Structures/client/index"],
+			"#utils": ["src/Structures/client/utils"],
+			"#BOT": ["src/client"],
+			"#logger": ["src/Structures/handler/sparky"],
+			"#handler": ["src/Structures/handler/index"],
+			"#plugins": ["src/Structures/handler/plugins"],
+			"#schemas/*": ["src/Structures/mongo/schemas/*"]
+		}
+	}
+}

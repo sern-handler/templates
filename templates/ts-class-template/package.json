@@ -1,0 +1,52 @@
+{
+	"name": "ts-class-example",
+	"version": "1.0.0",
+	"description": "Class-based example",
+	"main": "dist/client.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"start": "tsc && node ./dist/client.js",
+		"dev": "tsc && nodemon ./dist/client.js"
+	},
+	"keywords": [
+		"typescript",
+		"sern",
+		"discord.js"
+	],
+	"license": "UNLICENSED",
+	"dependencies": {
+		"@sern/handler": "^2.5.3",
+		"@spark.ts/logger": "^1.4.0",
+		"colorette": "^2.0.19",
+		"discord.js": "^14.7.1",
+		"mongoose": "^7.0.1"
+	},
+	"devDependencies": {
+		"@types/node": "^18.14.6",
+		"typescript": "^4.9.5"
+	},
+	"imports": {
+		"#client": [
+			"./dist/Structures/client/index.js"
+		],
+		"#utils": [
+			"./dist/Structures/client/utils.js"
+		],
+		"#BOT": [
+			"./dist/client.js"
+		],
+		"#logger": [
+			"./dist/Structures/handler/sparky.js"
+		],
+		"#handler": [
+			"./dist/Structures/handler/index.js"
+		],
+		"#plugins": [
+			"./dist/Structures/handler/plugins.js"
+		],
+		"#schemas/*": [
+			"./dist/Structures/mongo/schemas/*.js"
+		]
+	}
+}
